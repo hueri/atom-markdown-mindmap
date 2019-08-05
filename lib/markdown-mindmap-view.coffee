@@ -47,7 +47,7 @@ getSVG = ({ body, width, height, viewbox }) ->
   """
 
 transformLinks = (headings, filepath) ->
-  dir = path.dirname(filepath)
+  dir = path.dirname(String(filepath))
   result = []
   headings.forEach (h) ->
     h.filepath = filepath
